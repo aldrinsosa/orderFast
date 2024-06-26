@@ -10,6 +10,7 @@ public class MenuBar extends FlowPane {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/sosaco/orderfast/views/components/menu-bar.fxml"));
         loader.setController(this);
         loader.setRoot(this);
+        loader.setClassLoader(getClass().getClassLoader());
         try {
             loader.load();
         } catch (IOException e) {
