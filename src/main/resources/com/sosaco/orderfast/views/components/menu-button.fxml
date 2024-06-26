@@ -20,9 +20,9 @@
             <Cursor fx:constant="HAND" />
         </cursor>
     </Button>
-    <Label fx:id="label" text="Default" textFill="#22223b" textOverrun="CLIP">
+    <Label fx:id="label" style="-fx-font-family: &quot;Alatsi&quot;;" text="Default" textFill="#22223b" textOverrun="CLIP">
         <font>
-            <Font name="Alatsi Regular" size="14.0" />
+            <Font size="13.0" />
         </font>
     </Label>
 </fx:root>
