@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.sosaco.orderfast.controllers.components.MenuButton?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.FlowPane?>
-<?import com.sosaco.orderfast.controllers.components.MenuButton?>
-<fx:root type="FlowPane" cache="true" hgap="14.0" layoutX="22.0" layoutY="20.0" prefHeight="113.0" prefWidth="1229.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7px;"  xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+
+<fx:root cache="true" hgap="14.0" layoutX="22.0" layoutY="20.0" prefHeight="113.0" prefWidth="1229.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7px;" type="FlowPane" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
     <MenuButton color="YELLOW" icon="RECETAS" text="Recetas" />
     <MenuButton color="GREEN" icon="INVENTARIO" text="Inventario" />
     <MenuButton color="RED" icon="CONFIGURACION" prefWidth="87.0" text="Configuracion" />
+   <MenuButton color="BROWN" icon="PEDIDOS" text="Pedidos" />
     <padding>
         <Insets left="14.0" top="8.0" />
     </padding>
