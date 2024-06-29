@@ -58,7 +58,7 @@ public class MenuButton extends VBox {
     }
 
     private void changePage(MouseEvent e){
-        String view = "/com/sosaco/orderfast/views/scenes/" + button.getParent().getId() + "-view.fxml";
+        String view = "/com/sosaco/orderfast/views/scenes/" + icon.toString().toLowerCase() + "-view.fxml";
 
         Parent pane = null;
         try {
