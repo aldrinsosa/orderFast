@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.sosaco.orderfast.controllers.components.OrderItem?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="TOP_CENTER" maxHeight="512.0" maxWidth="305.0" minHeight="110.0" minWidth="305.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="305.0" spacing="11.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root alignment="TOP_CENTER" maxWidth="290.0" minHeight="110.0" minWidth="290.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="290.0" spacing="11.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7;" type="VBox" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label fx:id="tableLabel" alignment="CENTER" style="-fx-font-family: &quot;Alatsi&quot;; -fx-font-size: 32;" text="Mesa #x" textFill="#22223b" />
-      <OrderItem />
    </children>
    <padding>
       <Insets bottom="11.0" top="11.0" />
    </padding>
-</VBox>
+</fx:root>

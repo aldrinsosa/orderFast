@@ -20,13 +20,14 @@ public class OrderCard extends VBox {
 
     public void setTable(int table) {
         this.table = table;
-        tableLabel.setText(Integer.toString(table));
+        tableLabel.setText("Mesa #" + Integer.toString(table));
     }
 
     public OrderCard() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/sosaco/orderfast/views/components/order-card.fxml"));
         loader.setRoot(this);
         loader.setController(this);
+        loader.setClassLoader(getClass().getClassLoader());
         try {
             loader.load();
         } catch (IOException e) {
