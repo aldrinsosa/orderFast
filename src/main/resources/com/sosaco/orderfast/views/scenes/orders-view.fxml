@@ -2,12 +2,14 @@
 
 <?import com.sosaco.orderfast.controllers.components.MenuBar?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.control.Label?>
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #22223B;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22">
+<GridPane stylesheets="@../../styles/views.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #22223B;" styleClass="mainGrid" vgap="15.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
    </columnConstraints>
@@ -16,10 +18,21 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
    </rowConstraints>
    <padding>
-      <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
    </padding>
    <children>
       <MenuBar />
-      <Label text="Orders" GridPane.rowIndex="1" />
+      <VBox prefHeight="550.0" prefWidth="1230.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7px;" GridPane.rowIndex="1">
+         <children>
+            <ScrollPane blendMode="DARKEN" cacheShape="false" hbarPolicy="NEVER" prefHeight="550.0" prefWidth="1230.0">
+               <content>
+                  <FlowPane prefHeight="550.0" prefWidth="1230.0" style="-fx-background-color: #22223B; -fx-background-radius: 7px;"/>
+               </content>
+            </ScrollPane>
+         </children>
+         <padding>
+            <Insets bottom="12.0" left="12.0" top="12.0" />
+         </padding>
+      </VBox>
    </children>
 </GridPane>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="512.0" maxWidth="305.0" minHeight="235.0" minWidth="305.0" prefHeight="250.0" prefWidth="305.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" />
