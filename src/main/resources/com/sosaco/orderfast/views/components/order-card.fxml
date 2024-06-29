@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
 
-<VBox maxHeight="512.0" maxWidth="305.0" minHeight="235.0" minWidth="305.0" prefHeight="250.0" prefWidth="305.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" />
+<VBox alignment="TOP_CENTER" maxHeight="512.0" maxWidth="305.0" minHeight="235.0" minWidth="305.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="250.0" prefWidth="305.0" spacing="11.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" style="-fx-font-family: &quot;Alatsi&quot;; -fx-font-size: 32;" text="Mesa #x" textFill="#22223b" />
+      <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="200.0">
+         <children>
+            <Text fill="#22223b" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Alatsi&quot;; -fx-font-size: 24;" text="Plate lorem ipsum" wrappingWidth="209.0" />
+            <Pane maxHeight="0.0" maxWidth="45.0" minHeight="0.0" minWidth="45.0" prefHeight="0.0" prefWidth="45.0" />
+            <Label alignment="CENTER" style="-fx-font-family: &quot;Alatsi&quot;; -fx-font-size: 24;" text="x" textFill="#22223b" />
+         </children>
+         <padding>
+            <Insets left="18.0" right="18.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets top="11.0" />
+   </padding>
+</VBox>

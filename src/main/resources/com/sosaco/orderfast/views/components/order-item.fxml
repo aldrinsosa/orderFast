@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<fx:root alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="200.0" type="HBox" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Text fx:id="recipeText" fill="#22223b" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Alatsi&quot;; -fx-font-size: 24;" text="Plate lorem ipsum" wrappingWidth="209.0" />
+        <Pane maxHeight="0.0" maxWidth="45.0" minHeight="0.0" minWidth="45.0" prefHeight="0.0" prefWidth="45.0" />
+        <Label fx:id="amountLabel" alignment="CENTER" style="-fx-font-family: &quot;Alatsi&quot;; -fx-font-size: 24;" text="x" textFill="#22223b" />
+    </children>
+    <padding>
+        <Insets left="18.0" right="18.0" />
+    </padding>
+</fx:root>
