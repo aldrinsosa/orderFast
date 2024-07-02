@@ -12,6 +12,7 @@ public class OrderCard extends VBox {
     @FXML
     private Label tableLabel;
 
+    //prop for the number of the table
     private int table;
 
     public int getTable() {
@@ -24,9 +25,11 @@ public class OrderCard extends VBox {
     }
 
     public OrderCard() {
+        //make the class a component
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/sosaco/orderfast/views/components/order-card.fxml"));
         loader.setRoot(this);
         loader.setController(this);
+        //let the nested components load first
         loader.setClassLoader(getClass().getClassLoader());
         try {
             loader.load();

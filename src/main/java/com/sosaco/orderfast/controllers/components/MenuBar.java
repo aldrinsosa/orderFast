@@ -10,10 +10,12 @@ import java.util.ArrayList;
 
 public class MenuBar extends FlowPane {
    public MenuBar(){
+       //make the class a component
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/sosaco/orderfast/views/components/menu-bar.fxml"));
         loader.setController(this);
         loader.setRoot(this);
-        loader.setClassLoader(getClass().getClassLoader());
+       //let the nested components load first
+       loader.setClassLoader(getClass().getClassLoader());
         try {
             loader.load();
         } catch (IOException e) {

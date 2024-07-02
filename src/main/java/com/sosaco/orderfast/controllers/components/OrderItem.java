@@ -16,6 +16,7 @@ public class OrderItem extends HBox {
     @FXML
     private Label amountLabel;
 
+    //props of the component with the name of the recipe and the amount that has been ordered
     private String recipe;
     private int amount;
 
@@ -38,6 +39,7 @@ public class OrderItem extends HBox {
     }
 
     public OrderItem() {
+        //make the class a component
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/sosaco/orderfast/views/components/order-item.fxml"));
         loader.setRoot(this);
         loader.setController(this);

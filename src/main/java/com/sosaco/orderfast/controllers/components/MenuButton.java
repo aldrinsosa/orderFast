@@ -37,11 +37,13 @@ public class MenuButton extends VBox {
     @FXML
     private Region svgPath;
 
+    //props for the icon, color and the text that goes with the button
     private Icon icon;
     private String text;
     private Color color;
 
     public MenuButton(){
+        //make the class a component
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/sosaco/orderfast/views/components/menu-button.fxml"));
         loader.setRoot(this);
         loader.setController(this);
@@ -54,12 +56,15 @@ public class MenuButton extends VBox {
     }
 
     private void initElements() {
+        //add event listener to the button
         button.setOnMouseClicked(this::changePage);
     }
 
     private void changePage(MouseEvent e){
+        //get the view with the id of the button
         String view = "/com/sosaco/orderfast/views/scenes/" + button.getParent().getId() + "-view.fxml";
 
+        //create the new pane with the view
         Parent pane = null;
         try {
             pane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(view)));
@@ -67,6 +72,7 @@ public class MenuButton extends VBox {
             throw new RuntimeException(ex);
         }
 
+        //set the pane as the new root
         button.getScene().setRoot(pane);
     }
 
@@ -91,6 +97,7 @@ public class MenuButton extends VBox {
             case YELLOW -> "#FFE1A8";
             case BROWN -> "#723d46";
         };
+        //set the background color according to the props
         String style = "-fx-background-color: " + rgbColor + ";";
         button.setStyle(style);
     }
@@ -114,8 +121,10 @@ public class MenuButton extends VBox {
             case INVENTORY, SETTINGS, ORDERS -> "60px";
         };
 
+        //set the icon and the width of it according to the props
         String shape = " -fx-shape: \"" + svgIcon + "\" ;";
         String width = " -fx-max-width: " + svgWidth + ";";
+        //get the current style and the new ones
         String style = svgPath.getStyle() + shape + width;
         svgPath.setStyle(style);
     }
