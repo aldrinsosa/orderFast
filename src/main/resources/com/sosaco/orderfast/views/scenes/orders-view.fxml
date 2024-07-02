@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.sosaco.orderfast.controllers.components.MenuBar?>
+<?import com.sosaco.orderfast.controllers.components.MenuButton?>
 <?import com.sosaco.orderfast.controllers.components.OrderCard?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.ScrollPane?>
@@ -22,7 +23,10 @@
       <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
    </padding>
    <children>
-      <MenuBar />
+      <MenuBar>
+         <children>
+            <MenuButton fx:id="inventory" color="MUSTARD" icon="ADD" text="Agregar" />
+         </children></MenuBar>
       <VBox prefHeight="550.0" prefWidth="1230.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7px;" GridPane.rowIndex="1">
          <children>
             <ScrollPane blendMode="DARKEN" cacheShape="false" hbarPolicy="NEVER" prefHeight="550.0" prefWidth="1230.0">

@@ -9,7 +9,6 @@
     <MenuButton fx:id="inventory" color="YELLOW" icon="INVENTORY" text="Inventario" />
     <MenuButton fx:id="orders" color="RED" icon="ORDERS" text="Pedidos" />
     <MenuButton fx:id="settings" color="BROWN" icon="SETTINGS" prefWidth="87.0" text="Configuracion" />
-   <MenuButton color="MUSTARD" icon="ADD" />
     <padding>
         <Insets left="14.0" top="8.0" />
     </padding>
