@@ -5,10 +5,11 @@
 <?import javafx.scene.layout.FlowPane?>
 
 <fx:root cache="true" hgap="14.0" layoutX="22.0" layoutY="20.0" prefHeight="113.0" prefWidth="1229.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7px;" type="FlowPane" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
-    <MenuButton color="GREEN" icon="RECIPES" text="Recetas" />
-    <MenuButton color="YELLOW" icon="INVENTORY" text="Inventario" />
-    <MenuButton color="RED" icon="ORDERS" text="Pedidos" />
-    <MenuButton color="BROWN" icon="SETTINGS" prefWidth="87.0" text="Configuracion" />
+    <MenuButton fx:id="recipes" color="GREEN" icon="RECIPES" text="Recetas" />
+    <MenuButton fx:id="inventory" color="YELLOW" icon="INVENTORY" text="Inventario" />
+    <MenuButton fx:id="orders" color="RED" icon="ORDERS" text="Pedidos" />
+    <MenuButton fx:id="settings" color="BROWN" icon="SETTINGS" prefWidth="87.0" text="Configuracion" />
+   <MenuButton color="MUSTARD" icon="ADD" />
     <padding>
         <Insets left="14.0" top="8.0" />
     </padding>
