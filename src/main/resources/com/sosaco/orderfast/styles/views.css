@@ -18,6 +18,10 @@
   -fx-background-color: -dark-blue;
 }
 
+.cardButton:hover {
+  -fx-cursor: hand;
+}
+
 .doneButton:hover{
   -fx-background-color: green;
 }

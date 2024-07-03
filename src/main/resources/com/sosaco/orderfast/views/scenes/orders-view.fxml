@@ -25,7 +25,7 @@
    <children>
       <MenuBar>
          <children>
-            <MenuButton fx:id="inventory" color="MUSTARD" icon="ADD" text="Agregar" />
+            <MenuButton fx:id="newOrder" color="MUSTARD" icon="ADD" text="Agregar" />
          </children></MenuBar>
       <VBox prefHeight="550.0" prefWidth="1230.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7px;" GridPane.rowIndex="1">
          <children>
