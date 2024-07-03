@@ -97,7 +97,7 @@ public class MenuButton extends VBox {
             case GREEN -> "#C9CBA3";
             case YELLOW -> "#FFE1A8";
             case BROWN -> "#723d46";
-            case MUSTARD -> "FFCF56";
+            case MUSTARD -> "#FFCF56";
         };
         //set the background color according to the props
         String style = "-fx-background-color: " + rgbColor + ";";

@@ -1,3 +1,7 @@
+.root{
+  -dark-blue: #22223B;
+}
+
 .mainGrid{
   max-height: "-Infinity";
   max-width: "-Infinity";
@@ -5,7 +9,19 @@
   min-width: "-Infinity";
   height: 1280px;
   width: 720px;
-  -fx-background-color: #22223B;
+  -fx-background-color: -dark-blue;
   -fx-vgap: 15;
   -fx-padding: 15;
+}
+
+.cardButton{
+  -fx-background-color: -dark-blue;
+}
+
+.doneButton:hover{
+  -fx-background-color: green;
+}
+
+.deleteButton:hover{
+  -fx-background-color: red;
 }
