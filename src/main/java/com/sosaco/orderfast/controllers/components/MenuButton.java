@@ -98,7 +98,7 @@ public class MenuButton extends VBox {
             case RED -> "#E26D5C";
             case GREEN -> "#C9CBA3";
             case YELLOW -> "#FFE1A8";
-            case BROWN -> "#723d46";
+            case BROWN -> "#754F44";
             case MUSTARD -> "#FFCF56";
             case MINT -> "#86BAA1";
         };
