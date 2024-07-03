@@ -1,5 +1,7 @@
 package com.sosaco.orderfast.controllers.components;
 
+import com.sosaco.orderfast.enums.ButtonColor;
+import com.sosaco.orderfast.enums.ButtonIcon;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,25 +15,6 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class MenuButton extends VBox {
-
-    public enum Color {
-        RED,
-        GREEN,
-        YELLOW,
-        BROWN,
-        MUSTARD,
-        MINT
-    }
-
-    public enum Icon {
-        SETTINGS,
-        INVENTORY,
-        RECIPES,
-        ORDERS,
-        ADD,
-        BILLING
-    }
-
     @FXML
     private Button button;
 
@@ -42,9 +25,9 @@ public class MenuButton extends VBox {
     private Region svgPath;
 
     //props for the icon, color and the text that goes with the button
-    private Icon icon;
+    private ButtonIcon icon;
     private String text;
-    private Color color;
+    private ButtonColor color;
 
     public MenuButton(){
         //make the class a component
@@ -88,11 +71,11 @@ public class MenuButton extends VBox {
         label.setText(text);
     }
 
-    public Color getColor() {
+    public ButtonColor getColor() {
         return color;
     }
 
-    public void setColor(Color color) {
+    public void setColor(ButtonColor color) {
         this.color = color;
         String rgbColor = switch (color) {
             case RED -> "#E26D5C";
@@ -107,11 +90,11 @@ public class MenuButton extends VBox {
         button.setStyle(style);
     }
 
-    public Icon getIcon() {
+    public ButtonIcon getIcon() {
         return icon;
     }
 
-    public void setIcon(Icon icon) {
+    public void setIcon(ButtonIcon icon) {
         this.icon = icon;
 
         String svgIcon  = switch (icon){
