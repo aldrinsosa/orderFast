@@ -1,7 +1,5 @@
 .root{
   -dark-blue: #22223B;
-  -red: #E26D5C;
-  -green:#C9CBA3;
 }
 
 .mainGrid{
@@ -14,20 +12,4 @@
   -fx-background-color: -dark-blue;
   -fx-vgap: 15;
   -fx-padding: 15;
-}
-
-.cardButton{
-  -fx-background-color: -dark-blue;
-}
-
-.cardButton:hover {
-  -fx-cursor: hand;
-}
-
-.doneButton:hover{
-  -fx-background-color: -green;
-}
-
-.deleteButton:hover{
-  -fx-background-color: -red;
 }

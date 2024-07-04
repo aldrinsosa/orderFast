@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Text?>
+
+<fx:root alignment="CENTER" minHeight="60.0" minWidth="660.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7px;" type="HBox" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="orderText" fill="#22223b" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Alatsi&quot;; -fx-font-size: 28px;" text="Plato lorem ipsum" wrappingWidth="540.0" />
+      <Label fx:id="orderAmount" alignment="CENTER" contentDisplay="CENTER" minWidth="53.0" style="-fx-font-family: &quot;Alatsi&quot;; -fx-font-size: 28px;" text="999" textFill="#22223b" />
+      <Region fx:id="deleteButton" maxHeight="31.0" prefHeight="31.0" prefWidth="29.0">
+         <styleClass>
+            <String fx:value="deleteButton" />
+            <String fx:value="cardButton" />
+         </styleClass>
+         <HBox.margin>
+            <Insets left="12.0" />
+         </HBox.margin>
+      </Region>
+   </children>
+   <padding>
+      <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+   <stylesheets>
+      <URL value="@../../styles/components.css" />
+      <URL value="@../../styles/icons.css" />
+   </stylesheets>
+</fx:root>

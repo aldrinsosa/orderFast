@@ -1,0 +1,19 @@
+.root{
+  -dark-blue: #22223B;
+}
+
+.cardButton{
+  -fx-background-color: -dark-blue;
+}
+
+.cardButton:hover {
+  -fx-cursor: hand;
+}
+
+.doneButton:hover{
+  -fx-background-color: #C9CBA3;
+}
+
+.deleteButton:hover{
+  -fx-background-color: #E26D5C;
+}
