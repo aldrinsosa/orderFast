@@ -7,6 +7,9 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
 <GridPane stylesheets="@../../styles/views.css" styleClass="mainGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #22223B;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -21,5 +24,21 @@
    <children>
       <MenuBar />
       <Label text="Recipes" GridPane.rowIndex="1" />
+       <VBox prefHeight="550.0" prefWidth="1229.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7px;" GridPane.rowIndex="1">
+           <children>
+               <ScrollPane cacheShape="false" fitToHeight="true" hbarPolicy="NEVER" maxWidth="1225.0" style="-fx-padding: 0; -fx-background: #4A4E69; -fx-control-inner-background: #4A4E69;" vbarPolicy="NEVER">
+                   <content>
+                       <FlowPane alignment="TOP_CENTER" hgap="14.0" prefHeight="550.0" prefWidth="1230.0" style="-fx-background-color: #22223B; -fx-background-radius: 7px;" vgap="9.0">
+                           <padding>
+                               <Insets bottom="9.0" right="9.0" top="9.0" />
+                           </padding>
+                       </FlowPane>
+                   </content>
+               </ScrollPane>
+           </children>
+           <padding>
+               <Insets bottom="12.0" left="12.0" top="12.0" />
+           </padding>
+       </VBox>
    </children>
 </GridPane>

@@ -1,5 +1,7 @@
 .root{
   -dark-blue: #22223B;
+  -red: #E26D5C;
+  -green:#C9CBA3;
 }
 
 .mainGrid{
@@ -23,9 +25,9 @@
 }
 
 .doneButton:hover{
-  -fx-background-color: green;
+  -fx-background-color: -green;
 }
 
 .deleteButton:hover{
-  -fx-background-color: red;
+  -fx-background-color: -red;
 }
