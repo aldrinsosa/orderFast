@@ -2,15 +2,19 @@
 
 <?import com.sosaco.orderfast.controllers.components.MenuBar?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.FlowPane?>
-<GridPane stylesheets="@../../styles/views.css" styleClass="mainGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #22223B;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #22223B;" styleClass="mainGrid" stylesheets="@../../styles/views.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
   </columnConstraints>
@@ -28,10 +32,24 @@
            <children>
                <ScrollPane cacheShape="false" fitToHeight="true" hbarPolicy="NEVER" maxWidth="1225.0" style="-fx-padding: 0; -fx-background: #4A4E69; -fx-control-inner-background: #4A4E69;" vbarPolicy="NEVER">
                    <content>
-                       <FlowPane alignment="TOP_CENTER" hgap="14.0" prefHeight="550.0" prefWidth="1230.0" style="-fx-background-color: #22223B; -fx-background-radius: 7px;" vgap="9.0">
+                       <FlowPane hgap="12.0" prefHeight="550.0" prefWidth="1230.0" style="-fx-background-color: #22223B; -fx-background-radius: 7px;" vgap="12.0">
                            <padding>
-                               <Insets bottom="9.0" right="9.0" top="9.0" />
+                               <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
                            </padding>
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="250.0" prefWidth="290.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7px;">
+                           <graphic>
+                              <HBox alignment="TOP_CENTER" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" style="-fx-background-color: #22223B; -fx-background-radius: 100px;">
+                                 <children>
+                                    <Region prefHeight="60.0" prefWidth="60.0" style="-fx-shape: &quot;M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM16 12.75H12.75V16C12.75 16.41 12.41 16.75 12 16.75C11.59 16.75 11.25 16.41 11.25 16V12.75H8C7.59 12.75 7.25 12.41 7.25 12C7.25 11.59 7.59 11.25 8 11.25H11.25V8C11.25 7.59 11.59 7.25 12 7.25C12.41 7.25 12.75 7.59 12.75 8V11.25H16C16.41 11.25 16.75 11.59 16.75 12C16.75 12.41 16.41 12.75 16 12.75Z&quot;; -fx-background-color: #4A4E69; -fx-border-width: 3px;" />
+                                 </children>
+                              </HBox>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
                        </FlowPane>
                    </content>
                </ScrollPane>

@@ -33,9 +33,9 @@
          <children>
             <ScrollPane cacheShape="false" fitToHeight="true" hbarPolicy="NEVER" maxWidth="1225.0" style="-fx-padding: 0; -fx-background: #4A4E69; -fx-control-inner-background: #4A4E69;" vbarPolicy="NEVER">
                <content>
-                  <FlowPane alignment="TOP_CENTER" hgap="14.0" prefHeight="550.0" prefWidth="1230.0" style="-fx-background-color: #22223B; -fx-background-radius: 7px;" vgap="9.0">
+                  <FlowPane alignment="TOP_CENTER" hgap="12.0" prefHeight="550.0" prefWidth="1230.0" style="-fx-background-color: #22223B; -fx-background-radius: 7px;" vgap="12.0">
                      <padding>
-                        <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
                      </padding>
                      <children>
                         <OrderItemList amount="5" order="test" />

@@ -17,3 +17,7 @@
 .deleteButton:hover{
   -fx-background-color: #E26D5C;
 }
+
+.editButton:hover{
+  -fx-background-color: #FFE1A8;
+}
