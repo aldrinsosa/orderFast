@@ -13,7 +13,7 @@ import java.util.Objects;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("views/scenes/orders-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("views/scenes/recipes-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
 
         //load custom font

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.sosaco.orderfast.controllers.components.MenuBar?>
+<?import com.sosaco.orderfast.controllers.components.RecipeCard?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
@@ -32,11 +33,13 @@
            <children>
                <ScrollPane cacheShape="false" fitToHeight="true" hbarPolicy="NEVER" maxWidth="1225.0" style="-fx-padding: 0; -fx-background: #4A4E69; -fx-control-inner-background: #4A4E69;" vbarPolicy="NEVER">
                    <content>
-                       <FlowPane hgap="12.0" prefHeight="550.0" prefWidth="1230.0" style="-fx-background-color: #22223B; -fx-background-radius: 7px;" vgap="12.0">
+                       <FlowPane hgap="12.0" prefHeight="550.0" prefWidth="1230.0" rowValignment="TOP" style="-fx-background-color: #22223B; -fx-background-radius: 7px;" vgap="12.0">
                            <padding>
                                <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
                            </padding>
                      <children>
+                         <RecipeCard recipeName="Plato 1" />
+                        <RecipeCard recipeName="Plato  2" />
                         <Button mnemonicParsing="false" prefHeight="250.0" prefWidth="290.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7px;">
                            <graphic>
                               <HBox alignment="TOP_CENTER" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" style="-fx-background-color: #22223B; -fx-background-radius: 100px;">
