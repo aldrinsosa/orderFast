@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.sosaco.orderfast.controllers.components.RecipeCard?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox style="-fx-background-color: #22223B; -fx-pref-width: 660px; -fx-pref-height: 675px; -fx-padding: 12px;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox style="-fx-background-color: #4A4E69; -fx-pref-height: 650px; -fx-background-radius: 7px; -fx-padding: 12px;">
+         <children>
+            <ScrollPane cacheShape="false" fitToHeight="true" hbarPolicy="NEVER" style="-fx-padding: 0; -fx-background: #4A4E69; -fx-control-inner-background: #4A4E69;" vbarPolicy="NEVER">
+               <content>
+                  <FlowPane alignment="TOP_CENTER" hgap="8.0" prefHeight="628.0" prefWidth="615.0" style="-fx-background-color: #22223B; -fx-background-radius: 7px;" vgap="8.0">
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                     <children>
+                        <RecipeCard buttons="false" recipeName="Plato 1" />
+                        <RecipeCard buttons="false" recipeName="Plato 2" />
+                     </children>
+                  </FlowPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</VBox>

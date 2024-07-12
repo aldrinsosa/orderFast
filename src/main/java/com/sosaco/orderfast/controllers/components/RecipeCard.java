@@ -22,6 +22,7 @@ public class RecipeCard extends VBox {
     private Label initialsLabel;
     private String recipeImage;
     private String recipeName;
+    private boolean buttons = true;
 
     public RecipeCard() {
         //make the class a component
@@ -65,5 +66,14 @@ public class RecipeCard extends VBox {
 
     public void setRecipeImage(String recipeImage) {
         this.recipeImage = recipeImage;
+    }
+
+    public boolean isButtons() {
+        return buttons;
+    }
+
+    public void setButtons(boolean buttons) {
+        this.buttons = buttons;
+        buttonsContainer.setVisible(buttons);
     }
 }
