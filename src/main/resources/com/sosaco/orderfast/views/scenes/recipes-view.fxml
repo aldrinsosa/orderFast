@@ -40,7 +40,7 @@
                      <children>
                          <RecipeCard recipeName="Plato 1" />
                         <RecipeCard recipeName="Plato  2" />
-                        <Button mnemonicParsing="false" prefHeight="250.0" prefWidth="290.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7px;">
+                        <Button fx:id="newDishButton" mnemonicParsing="false" onMouseClicked="#createDish" prefHeight="250.0" prefWidth="290.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7px;">
                            <graphic>
                               <HBox alignment="TOP_CENTER" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" style="-fx-background-color: #22223B; -fx-background-radius: 100px;">
                                  <children>

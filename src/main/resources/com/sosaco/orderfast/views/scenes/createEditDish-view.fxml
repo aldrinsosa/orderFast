@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.sosaco.orderfast.controllers.components.MenuBar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #22223B;" styleClass="mainGrid" stylesheets="@../../styles/views.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="113.0" minHeight="113.0" prefHeight="113.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <padding>
+      <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+   </padding>
+   <children>
+      <MenuBar />
+      <VBox prefHeight="550.0" prefWidth="1229.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7px;" GridPane.rowIndex="1">
+         <children>
+            <GridPane maxWidth="-Infinity" prefHeight="550.0" prefWidth="1225.0" style="-fx-background-color: #22223B; -fx-background-radius: 7px; -fx-padding: 24px;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="838.7333374023438" minWidth="10.0" prefWidth="766.2000732421875" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="611.5332641601562" minWidth="10.0" prefWidth="471.7999267578125" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ScrollPane cacheShape="false" fitToHeight="true" hbarPolicy="NEVER" maxWidth="1225.0" style="-fx-padding: 0; -fx-background: #4A4E69; -fx-control-inner-background: #4A4E69;" vbarPolicy="NEVER">
+                     <content>
+                        <FlowPane alignment="TOP_CENTER" hgap="14.0" prefHeight="550.0" prefWidth="1230.0" style="-fx-background-color: #22223B; -fx-background-radius: 7px;" vgap="9.0">
+                           <padding>
+                              <Insets bottom="9.0" right="9.0" top="9.0" />
+                           </padding>
+                        </FlowPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets bottom="12.0" left="12.0" top="12.0" />
+         </padding>
+      </VBox>
+   </children>
+</GridPane>
