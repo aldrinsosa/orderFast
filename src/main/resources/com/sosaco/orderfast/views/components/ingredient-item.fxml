@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-pref-width: 724px; -fx-pref-height: 42.4px; -fx-alignment: CENTER_LEFT; -fx-spacing: 15px;" type="HBox" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField promptText="Nombre" style="-fx-font-family: &quot;Alatsi&quot;; -fx-font-size: 25px; -fx-min-width: 485px; -fx-text-fill: #22223B; -fx-background-color: #4A4E69; -fx-min-height: 42.4px; -fx-border-radius: 7px; -fx-prompt-text-fill: #22223B;" />
+      <Spinner style="-fx-font-family: &quot;Alatsi&quot;; -fx-font-size: 25px; -fx-text-fill: #4A4E69; -fx-min-height: 42.4px; -fx-body-color: #4A4E69; -fx-base: #4A4E69; -fx-min-width: 97px;" />
+      <ChoiceBox prefWidth="150.0" style="-fx-font-family: &quot;Alatsi&quot;; -fx-font-size: 25px; -fx-text-fill: #4A4E69; -fx-min-height: 42.4px; -fx-min-width: 97px; -fx-base: #4A4E69; -fx-background-color: #4A4E69; -fx-border-radius: 7px;" />
+   </children>
+</fx:root>

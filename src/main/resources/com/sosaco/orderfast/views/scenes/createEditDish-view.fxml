@@ -2,12 +2,15 @@
 
 <?import com.sosaco.orderfast.controllers.components.MenuBar?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
 <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #22223B;" styleClass="mainGrid" stylesheets="@../../styles/views.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
    <columnConstraints>
@@ -24,7 +27,7 @@
       <MenuBar />
       <VBox prefHeight="550.0" prefWidth="1229.0" style="-fx-background-color: #4A4E69; -fx-background-radius: 7px;" GridPane.rowIndex="1">
          <children>
-            <GridPane maxWidth="-Infinity" prefHeight="550.0" prefWidth="1225.0" style="-fx-background-color: #22223B; -fx-background-radius: 7px; -fx-padding: 24px;">
+            <GridPane maxWidth="-Infinity" prefHeight="550.0" prefWidth="1225.0" style="-fx-background-color: #22223B; -fx-background-radius: 7px; -fx-padding: 24px; -fx-hgap: 24px;">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="838.7333374023438" minWidth="10.0" prefWidth="766.2000732421875" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="611.5332641601562" minWidth="10.0" prefWidth="471.7999267578125" />
@@ -33,15 +36,48 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <ScrollPane cacheShape="false" fitToHeight="true" hbarPolicy="NEVER" maxWidth="1225.0" style="-fx-padding: 0; -fx-background: #4A4E69; -fx-control-inner-background: #4A4E69;" vbarPolicy="NEVER">
-                     <content>
-                        <FlowPane alignment="TOP_CENTER" hgap="14.0" prefHeight="550.0" prefWidth="1230.0" style="-fx-background-color: #22223B; -fx-background-radius: 7px;" vgap="9.0">
-                           <padding>
-                              <Insets bottom="9.0" right="9.0" top="9.0" />
-                           </padding>
-                        </FlowPane>
-                     </content>
-                  </ScrollPane>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="100.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="379.8666748046875" minHeight="10.0" prefHeight="379.8666748046875" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-max-height: 42px; -fx-background-color: #4A4E69; -fx-alignment: CENTER_LEFT; -fx-background-radius: 7px;">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Alatsi&quot;; -fx-font-size: 25px; -fx-opacity: 0.5; -fx-fill: #22223B;" text="Nombre" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="18.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-max-height: 42px; -fx-alignment: CENTER_LEFT; -fx-spacing: 15px;">
+                                 <children>
+                                    <Label style="-fx-font-family: &quot;Alatsi&quot;; -fx-font-size: 25px; -fx-min-width: 485px; -fx-text-fill: #4A4E69;" text="Ingredientes" />
+                                    <Label style="-fx-font-family: &quot;Alatsi&quot;; -fx-font-size: 25px; -fx-text-fill: #4A4E69;" text="Cantidad" />
+                                    <Label style="-fx-font-family: &quot;Alatsi&quot;; -fx-font-size: 25px; -fx-text-fill: #4A4E69;" text="Unidad" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="15.0" right="15.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <ScrollPane cacheShape="false" fitToHeight="true" hbarPolicy="NEVER" maxWidth="1225.0" style="-fx-padding: 0; -fx-background: #22223B; -fx-control-inner-background: #22223B;" vbarPolicy="NEVER" GridPane.rowIndex="1">
+                           <content>
+                              <FlowPane alignment="TOP_CENTER" hgap="14.0" prefHeight="550.0" prefWidth="1230.0" style="-fx-background-color: #22223B; -fx-background-radius: 7px;" vgap="9.0">
+                                 <padding>
+                                    <Insets bottom="9.0" right="9.0" top="9.0" />
+                                 </padding>
+                              </FlowPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </GridPane>
                </children>
             </GridPane>
          </children>
